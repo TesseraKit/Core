@@ -1,0 +1,14 @@
+# Bun configuration file
+
+[install]
+# Use pnpm-style node_modules
+nodeLinker = "pnpm"
+
+[test]
+# Test configuration
+coverage = true
+coverageDir = "coverage/bun"
+
+[run]
+# Silent mode for cleaner output
+silent = false
