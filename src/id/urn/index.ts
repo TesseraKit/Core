@@ -18,5 +18,7 @@ export { Urn } from "./api";
 
 /**
  * Type guard for checking if a value is a URN
+ * Re-exported from Urn.isValid for convenience
  */
-export const isUrn = Urn.isValid;
+import { Urn as UrnApi } from "./api";
+export const isUrn = UrnApi.isValid;
