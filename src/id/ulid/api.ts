@@ -11,7 +11,7 @@ import {
   RANDOM_LENGTH,
   ULID_LENGTH,
   ULID_PATTERN,
-} from "./constants.js";
+} from "./constants";
 import { type UlidType, UlidSchema } from "./types";
 import { encodeTime, encodeRandom, decodeTime } from "./encoding";
 

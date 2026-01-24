@@ -5,9 +5,9 @@
 
 import { Brand } from "effect";
 import { Schema as S } from "@effect/schema";
-import { ULID_PATTERN } from "../ulid/constants.js";
-import { type UlidType } from "../ulid/types.js";
-import { APP_PATTERN, ENTITY_PATTERN, URN_PATTERN } from "./constants.js";
+import { ULID_PATTERN } from "../ulid/constants";
+import { type UlidType } from "../ulid/types";
+import { APP_PATTERN, ENTITY_PATTERN, URN_PATTERN } from "./constants";
 
 /**
  * Branded type for URN strings

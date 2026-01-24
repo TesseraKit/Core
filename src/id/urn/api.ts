@@ -4,17 +4,17 @@
  */
 
 import { Effect, pipe, Option } from "effect";
-import { Ulid } from "../ulid/api.js";
-import { type UlidType } from "../ulid/types.js";
-import { APP_PATTERN, ENTITY_PATTERN, URN_PATTERN } from "./constants.js";
+import { Ulid } from "../ulid/api";
+import { type UlidType } from "../ulid/types";
+import { APP_PATTERN, ENTITY_PATTERN, URN_PATTERN } from "./constants";
 import {
   type UrnType,
   type UrnComponents,
   type UrnCreateOptions,
   UrnSchema,
-} from "./types.js";
-import { UrnError } from "./errors.js";
-import { validateApp, validateEntity } from "./validators.js";
+} from "./types";
+import { UrnError } from "./errors";
+import { validateApp, validateEntity } from "./validators";
 
 /**
  * URN creation and manipulation utilities
@@ -50,7 +50,11 @@ export const Urn = {
    * });
    * ```
    */
-  create: (app: string, entity: string, options?: UrnCreateOptions): UrnType => {
+  create: (
+    app: string,
+    entity: string,
+    options?: UrnCreateOptions,
+  ): UrnType => {
     if (!APP_PATTERN.test(app)) {
       throw new UrnError(`Invalid app name "${app}"`, "INVALID_APP", app);
     }

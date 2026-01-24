@@ -26,4 +26,4 @@
  * ```
  */
 
-export * from "./urn/index.js";
+export * from "./urn/index";

@@ -5,7 +5,7 @@
 
 import { Brand } from "effect";
 import { Schema as S } from "@effect/schema";
-import { ULID_PATTERN } from "./constants.js";
+import { ULID_PATTERN } from "./constants";
 
 /**
  * Branded type for ULID strings

@@ -3,7 +3,7 @@
  * @description Constants used for URN validation and pattern matching
  */
 
-import { ULID_PATTERN } from "../ulid/constants.js";
+import { ULID_PATTERN } from "../ulid/constants";
 
 /**
  * Pattern for valid app names

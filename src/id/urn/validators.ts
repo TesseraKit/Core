@@ -4,8 +4,8 @@
  */
 
 import { Effect } from "effect";
-import { APP_PATTERN, ENTITY_PATTERN } from "./constants.js";
-import { UrnError } from "./errors.js";
+import { APP_PATTERN, ENTITY_PATTERN } from "./constants";
+import { UrnError } from "./errors";
 
 /**
  * Validates an app name
